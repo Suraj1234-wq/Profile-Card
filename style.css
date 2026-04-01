@@ -5,21 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Default (Laptop / Desktop ke liye) */
-.container {
-  width: 1200px;
-  margin: auto;
-  background-color: lightblue;
-}
-
-/* Tablet ke liye (768px se 1024px tak) */
-@media (max-width: 1024px) {
-  .container {
-    width: 90%;
-    background-color: lightgreen;
-  }
-}
-
 /* Mobile ke liye (768px se chhota) */
 @media (max-width: 768px) {
   .container {
