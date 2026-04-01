@@ -6,10 +6,30 @@
 }
 
 /* Mobile ke liye (768px se chhota) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container {
     width: 100%;
     background-color: lightcoral;
+  } */
+/* } */
+
+/* Mobile ke liye (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 body {
