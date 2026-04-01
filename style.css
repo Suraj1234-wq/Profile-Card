@@ -5,39 +5,25 @@
   box-sizing: border-box;
 }
 
-/* Mobile ke liye (768px se chhota) */
-/* @media (max-width: 768px) {
-  .container {
-    width: 100%;
-    background-color: lightcoral;
-  } */
-/* } */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-/* Mobile ke liye (max-width: 768px) */
+/* Mobile */
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-    margin-bottom: 15px;
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
+
 body {
   display: flex;
   justify-content: center;
   background-color: #EBE3DB;
   align-items: center;
-  /* height: 100vh; */
+  height: 100vh;
+  
 }
 
 .container{
