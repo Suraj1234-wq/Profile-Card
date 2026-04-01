@@ -17,7 +17,7 @@ body {
   justify-content: center;
   background-color: #EBE3DB;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .container{
