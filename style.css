@@ -1,29 +1,18 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   font-family: 'poppins',sans-serif;
   box-sizing: border-box;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-body {
+.box6 {
   display: flex;
   justify-content: center;
   background-color: #EBE3DB;
   align-items: center;
   height: 100vh;
-  
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container{
@@ -50,10 +39,13 @@ body {
   border-radius: 50%;
   margin-top: 50px;
   border: 3px solid white;
-  background-image: url("suraj.jpeg");
-  background-size: cover;
 }
 
+.box2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 .box3 {
   text-align: center;
   margin-top: 30px;
@@ -119,4 +111,130 @@ button{
 hr {
   height: 20px;
   background-color: rgba(128, 128, 128, 0);
+} */
+
+
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body center */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Outer box */
+.box6 {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Main container */
+.container {
+  max-width: 350px;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+/* Profile image */
+.box2 img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text */
+.box3 span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.box3 p {
+  margin: 5px 0;
+}
+
+/* Icons */
+.icon {
+  margin: 10px 0;
+}
+
+.icon a {
+  margin: 0 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Buttons */
+.btn {
+  margin: 10px 0;
+}
+
+.btn button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Stats */
+.box5 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.box5 p {
+  font-size: 14px;
+}
+
+.box5 hr {
+  height: 20px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .box2 img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .box3 span {
+    font-size: 18px;
+  }
+
+  .btn button {
+    width: 100%;
+  }
+
+  .box5 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box5 hr {
+    display: none;
+  }
 }
